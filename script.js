@@ -172,13 +172,12 @@ save.addEventListener('click',()=>{
 })
 
 invent_but.addEventListener('click',()=>{
-    open_modal()
+    
     render_inv()
+    modal.classList.toggle('visible')
 })
 
-function open_modal(){
-    modal.classList.add('visible')
-}
+
 
 function close_modal(){
     modal.classList.remove('visible')
